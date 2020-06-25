@@ -1,0 +1,32 @@
+.header{
+	height: 40px;
+	position: relative;
+	background: gray;
+	display: flex;
+	align-items: center;
+	padding: 0 1em;
+	background: #248ea9;
+	color: #ffe;
+	font-weight: bold;
+}
+
+.header a, a:visited, a:link {
+  text-decoration: none;
+  color: #ffe;
+  cursor: inherit;
+}
+
+.header a:hover{
+	color: #aee7e8;
+  cursor: pointer;
+}
+
+.header div.right{
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+.header div a{
+	margin: 0 0.3em;
+}

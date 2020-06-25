@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+
+.form {
+	display: flex;
+	margin: 5em;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.form input {
+	display: flex;
+	margin: 0.5em;
+	padding: 0.2em;
+	font-size: 1.2em;
+}
+
+.form header{
+	display: block;
+	font-weight: bold;
+	font-size: 1.5em;
+}

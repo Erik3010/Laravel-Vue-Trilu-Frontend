@@ -1,0 +1,45 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.board-container{
+	flex: 1 1 100%;
+	margin: 20px;
+	display: flex;
+	flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.board-container::after {
+  content: "";
+  flex: auto;
+}
+
+.board-wrapper{
+	display:flex;
+	flex: 0 0 25%;
+	box-sizing: border-box;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+.board{
+	flex: 1;
+	padding: 1em;
+	background: #248ea9;
+	color: #ffe;
+	font-weight: bold;
+}
+
+.new-board{
+	background: #fafdcb;
+	color: #248ea9;
+}
+
+.board input{
+	width: 100%;
+}

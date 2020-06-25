@@ -1,0 +1,167 @@
+.container{
+	position: absolute;
+	height: 90vh;
+	width: 100vw;
+}
+
+.team-container{
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.team-container div {
+	display: inline-block;
+}
+
+.team-container .board-name{
+	margin-right: 1em;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.team-container .member {
+	background: #aee7e8;
+	font-weight: bold;
+	color: #111;
+	margin-left: -0.7em;
+	border: 1px solid #ffe;
+	border-radius: 50%;
+	padding: 0.3em;
+	cursor: pointer;
+}
+
+.team-container .member:hover{
+	box-shadow:inset 0 0 0 20px rgba(0,0,0,0.3);
+}
+
+.team-container .button {
+	padding: 0.3em 0.5em;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.card-container{
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.content{
+	overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+	height: 80vh;
+	display: flex;
+	align-items: flex-start;
+}
+
+.list{
+	word-wrap: break-word;
+	white-space: normal;
+	display: inline-block;
+	min-width: 272px;
+	padding: 0.5em;
+	margin-right: 0.7em;
+	background: #28c3d4;
+	border-radius: 3px;
+	color: #ffe;
+	box-shadow:inset 0 0 0 100vh rgba(0,0,0,0.2);
+}
+
+.list > :last-child {
+	margin-right: 0 !important;
+}
+
+.list header {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-left: 0.5em;
+}
+
+.list header:hover{
+	color: #248ea9;
+	cursor: pointer;
+}
+
+.list .cards{
+	margin-top: 0.5em;
+	max-height: 55vh;
+	overflow-y: auto;
+	padding: 0.2em;
+}
+
+.list .card{
+	display: flex;
+	margin: 0.5em 0;
+	background: #ffe;
+	border-radius: 3px;
+	color: #111;
+}
+
+.list .card .card-content{
+	padding: 0.5em;
+	flex: 6;
+}
+
+.list .card-content:hover{
+	box-shadow:inset 0 0 0 1000px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+.list .card .control{
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 1;
+	flex: 1;
+	margin-right: 5px;
+}
+
+.list .card .control span{
+	font-size: 1.5em;
+	padding: 2px;
+	margin: 0px;
+	white-space: nowrap;
+}
+
+.list .card .control span:hover, .list > .control span:hover{
+	color: #248ea9;
+	cursor: pointer;
+}
+
+.list > .control{
+	margin-top:-5px;
+	text-align: center;
+}
+
+.list > .control span{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.list .button{
+	margin-top: 0.2em;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.button{
+	background: #28c3d4;
+	color: #fafdcb;
+	box-shadow:inset 0 0 0 272px rgba(0,0,0,0.4);
+	color: #ffe;
+	cursor:pointer;
+}
+
+.button:hover{
+	box-shadow:inset 0 0 0 1000px rgba(0,0,0,0.6);
+}
+
+.list input, .card input{
+	width: 80%;
+}
+
+.card-on-edit .list header:after {
+	content: "(click here to move card)";
+	font-size: 0.8em;
+}
