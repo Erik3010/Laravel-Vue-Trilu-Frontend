@@ -1,4 +1,4 @@
-# frontend
+# Trillu Frontend
 
 ## Project setup
 ```
